@@ -13,8 +13,11 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require File.join(File.dirname(__FILE__), '../app', 'app.rb')
 require './app/models/link'
 require 'capybara/rspec'
+
+Capybara.app = BookmarkManager
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
