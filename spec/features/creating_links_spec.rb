@@ -1,3 +1,6 @@
+require 'database_cleaner'
+DatabaseCleaner.strategy = :truncation
+
 feature 'Creating links' do
   scenario 'I can save links in my bookmark manager' do
     visit ('/links/new')
@@ -7,3 +10,5 @@ feature 'Creating links' do
     expect(page).to have_content 'http://www.makersacademy.com'
   end
 end
+
+DatabaseCleaner.clean

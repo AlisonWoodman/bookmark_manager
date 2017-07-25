@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require_relative 'models/link'
+require 'database_cleaner'
+
 
 class BookmarkManager < Sinatra::Base
 
