@@ -1,6 +1,6 @@
 feature 'Viewing links' do
   scenario 'I can see existing links on the links page' do
-    Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
+    Link.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
 
     visit '/links'
 
