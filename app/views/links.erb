@@ -1,4 +1,4 @@
-<ul><%= @links.each do |link|  %>
-  <li><%= link %></li>
+<ul id='links'><% @links.each do |link|  %>
+  <li><%= link.title %> <%= link.url %></li>
   <% end %>
 </ul>
